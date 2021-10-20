@@ -1,0 +1,102 @@
+.form{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 206px;
+    display: flex;
+
+    &__inputText{
+        max-width: 83%;
+        width: 100%;
+        border: 1px solid #1AA6B7;
+        color: #1AA6B7;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 30px;
+        line-height: 37px;
+        font-family: Lexend;
+        padding: 6px 0 6px 20px;
+    }
+    &__inputText::placeholder{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        color:#1AA6B7;
+        
+
+    }
+    &__btn{
+        max-width: 15%;
+        width: 100%;
+        margin-left: 2%;
+        background: #1AA6B7;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: Lexend;
+        color: #F6F6F6;
+    }
+    &__inputError{
+        color: #FF414D;
+        max-width: 100%;
+        opacity: 0.4;
+    }
+    &__btn-clear{
+        background: #F6F6F6;
+        color: #1AA6B7;
+        border: 1px solid #1AA6B7;
+    }
+    &__error-container{
+        width: 100%;
+    }
+    &__error-btn{
+        height: 51px;
+    }
+    &__inputError-text{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FF414D;
+        opacity: 0.4;
+        margin-left: 20px;
+        
+    }
+    &__inputError-text{
+        margin-top: 22px;
+        p{
+            display: block;
+            position: relative;
+        }
+       
+        p::before{
+            content:"!";
+            padding: 0px 8px;
+            background:#FF414D;
+            opacity: 0.4;
+            border-radius: 50%;
+            margin-right: 12px;
+        }  
+        p::after{
+            content:"!";
+            left: 9px;
+            position: absolute;
+            padding-right: 12px;
+            font-size: 16px;
+        }   
+    }
+}
+
+
+.spiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-box{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
